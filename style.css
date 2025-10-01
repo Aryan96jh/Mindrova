@@ -1,0 +1,41 @@
+:root{
+  --lav-light: #F3E8FF;
+  --lav-mid:   #E9D5FF;
+  --lav-dark:  #9F7AEA;
+  --text:      #35264e;
+  --wave-duration: 12s; 
+
+}
+*{box-sizing: border-box;}
+html,body{height: 100%; margin: 0;}
+
+/*Starts with medium lavender (--lav-mid) at the top, fades into light lavender (--lav-light) at 45% down the page. its not gpt mfer*/
+
+body{
+    font-family: system-ui, -apple-system, "segoe ui",Roboto,"Helvetica neue",Arial;
+    background: linear-gradient(180deg,var(--lav-mid)0%,var(--lav-light)100%);
+    color: var(--text);
+}
+
+/*now the hero container which is the main one */
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.gengar {
+  width: min(250px, 40vmin);
+  height: auto;
+  display: block;
+  animation: gengarFloat 3.2s ease-in-out infinite;
+  will-change: transform;
+  -webkit-user-drag: none;
+}
+
