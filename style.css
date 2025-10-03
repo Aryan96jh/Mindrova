@@ -29,9 +29,19 @@ body{
     overflow: hidden;
     padding: 2rem;
 }
+.hero,h1{
+  height: 200px;
+  width: auto;
+  color: var(--lav-dark);
+  justify-content: center;
+  text-align: center;
+  font-size: 200%;
+  position: relative;
+
+}
 
 .pengu {
-  width: min(250px, 40vmin);
+  width: min(180px, 35vmin);
   height: auto;
   display: block;
   animation: gengarFloat 3.2s ease-in-out infinite;
